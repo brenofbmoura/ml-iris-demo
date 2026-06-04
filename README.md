@@ -1,91 +1,91 @@
 # 🌸 Iris Species Classifier — Machine Learning Demo
 
-Projeto de Machine Learning que treina um modelo para identificar a espécie de uma flor Iris com base em suas medidas físicas.
+A Machine Learning project that trains a model to identify the species of an Iris flower based on its physical measurements.
 
-## 📋 Sobre o Projeto
+## 📋 About
 
-Este projeto foi desenvolvido como parte do curso de **Oracle Cloud Infrastructure (OCI)** e demonstra o processo completo de Machine Learning, desde o carregamento dos dados até a realização de previsões.
+This project was developed as part of the **Oracle Cloud Infrastructure (OCI)** course and demonstrates the complete Machine Learning workflow, from loading data to making predictions.
 
-## 🔄 Fluxo do Projeto
+## 🔄 Project Flow
 
 ```
-Carregar Dados → Pré-processar → Treinar Modelo → Avaliar → Prever
+Load Data → Preprocess → Train Model → Evaluate → Predict
 ```
 
 ## 📊 Dataset
 
-O dataset utilizado é o famoso **Iris Dataset**, contendo 150 amostras de flores de 3 espécies diferentes:
+The dataset used is the famous **Iris Dataset**, containing 150 flower samples from 3 different species:
 
 - 🌸 *Iris Setosa*
 - 🌺 *Iris Versicolor*
 - 🌼 *Iris Virginica*
 
-Cada amostra possui 4 características:
+Each sample has 4 features:
 
-| Feature | Descrição |
+| Feature | Description |
 |---|---|
-| `sepal_length` | Comprimento da sépala (cm) |
-| `sepal_width` | Largura da sépala (cm) |
-| `petal_length` | Comprimento da pétala (cm) |
-| `petal_width` | Largura da pétala (cm) |
+| `sepal_length` | Sepal length (cm) |
+| `sepal_width` | Sepal width (cm) |
+| `petal_length` | Petal length (cm) |
+| `petal_width` | Petal width (cm) |
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies
 
 - **Python 3.13**
-- **Pandas** — manipulação de dados
-- **Scikit-learn** — modelo de Machine Learning
-- **Jupyter Notebook** — ambiente de desenvolvimento
+- **Pandas** — data manipulation
+- **Scikit-learn** — Machine Learning model
+- **Jupyter Notebook** — development environment
 
-## ⚙️ Como Executar
+## ⚙️ How to Run
 
-### 1. Clone o repositório
+### 1. Clone the repository
 ```bash
-git clone https://github.com/seu-usuario/ml-iris-demo.git
+git clone https://github.com/your-username/ml-iris-demo.git
 cd ml-iris-demo
 ```
 
-### 2. Instale as dependências
+### 2. Install dependencies
 ```bash
 conda install pandas scikit-learn
 ```
 
-### 3. Abra o notebook
+### 3. Open the notebook
 ```bash
 jupyter notebook MLDemo1.ipynb
 ```
 
-### 4. Execute todas as células em ordem
+### 4. Run all cells in order
 
-> O dataset `iris.csv` é baixado automaticamente pelo notebook, não é necessário baixar manualmente.
+> The `iris.csv` dataset is downloaded automatically by the notebook — no manual download needed.
 
-## 🤖 Modelo
+## 🤖 Model
 
-O algoritmo utilizado é a **Regressão Logística**, um classificador que aprende os padrões dos dados de treinamento e consegue prever a espécie de flores novas.
+The algorithm used is **Logistic Regression**, a classifier that learns patterns from training data and can predict the species of new flowers.
 
 ```python
 model = LogisticRegression(max_iter=200)
 model.fit(X, y)
 ```
 
-## 🔮 Exemplo de Previsão
+## 🔮 Prediction Example
 
 ```python
-nova_flor = pd.DataFrame([[5.1, 3.5, 1.4, 0.2]], 
+new_flower = pd.DataFrame([[5.1, 3.5, 1.4, 0.2]], 
               columns=['sepal_length', 'sepal_width', 'petal_length', 'petal_width'])
 
-model.predict(nova_flor)
-# Resultado: array(['setosa'])
+model.predict(new_flower)
+# Output: array(['setosa'])
 ```
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 ml-iris-demo/
-├── MLDemo1.ipynb   # Notebook principal
+├── MLDemo1.ipynb   # Main notebook
 ├── iris.csv        # Dataset
-└── README.md       # Este arquivo
+└── README.md       # This file
 ```
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
-Desenvolvido durante o curso de Oracle Cloud Infrastructure (OCI).
+Developed during the Oracle Cloud Infrastructure (OCI) course.
