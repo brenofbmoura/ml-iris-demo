@@ -84,8 +84,3 @@ ml-iris-demo/
 ├── MLDemo1.ipynb   # Main notebook
 ├── iris.csv        # Dataset
 └── README.md       # This file
-```
-
-## 👨‍💻 Author
-
-Developed during the Oracle Cloud Infrastructure (OCI) course.
